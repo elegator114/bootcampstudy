@@ -14,7 +14,7 @@
       /* 마우스가 a 태그 위에 올라올 때 */
       a:hover {
         color: white;
-        background-color: blue;
+        background-color: #b7bcc6;
       }
 
       button:hover {
@@ -41,14 +41,15 @@
       th,
       td {
         border: 1px solid black;
+        /* 선 중복 없애기 */
         border-collapse: collapse;
       }
 
       table {
         width: 100%;
       }
-      /* 2n 혹은 even : 짝수행 */
-      /* 2n+1 혹은 odd : 홀수행 */
+      /* (2n) 혹은 (even) : 짝수행 */
+      /* (2n+1) 혹은 (odd) : 홀수행 */
 
       tbody > tr:nth-child(odd) {
         background-color: greenyellow;
@@ -56,7 +57,7 @@
     </style>
   </head>
   <body>
-    <a href="https://naver.com">네이버</a>
+    <a href="https://naver.com" target="_blank">네이버</a>
     <a href="https://google.com">구글</a>
     <a href="http://aafjoeoajfoe.com">가짜 사이트</a>
     <br />

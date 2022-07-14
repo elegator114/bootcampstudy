@@ -6,26 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      /* 복합 선택자 */
+      /* 복합 선택자 => */
+
       /* 하위 선택자 방식 */
       /* section ul {
         border: 1px solid black;
       } */
 
       /* 자식 선택자 방식 */
+      /* 한 단계 아래까지만 찾음  */
       section > ul {
-        border: 1px solid black;
+        border: 1px solid rgb(142, 24, 24);
+        color: blueviolet;
       }
 
-      /* 인접 형제 선택자 */
-      /* h1 + ul {
+      /* 인접 형제 선택자 => 바로 밑에 것만 적용 */
+      h1 + ul {
         background-color: blue;
-      } */
+      }
 
       /* 일반 형제 선택자 */
-      h1 ~ ul {
+      /* h1 ~ ul {
         background-color: blue;
-      }
+      } */
     </style>
   </head>
   <body>
@@ -44,8 +47,10 @@
       <h1>h1태그</h1>
       <ul>
         <li>li태그</li>
+        <li>li태그</li>
       </ul>
       <ul>
+        <li>li태그</li>
         <li>li태그</li>
       </ul>
     </div>
