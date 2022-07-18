@@ -14,14 +14,18 @@
 
       .table th,
       .table td {
-        border: 1px solid black;
+        border: 1px dashed black;
       }
 
       .table-striped > tbody > tr:nth-child(2n + 1) {
         background-color: aquamarine;
       }
 
-      .table-hover > tbody > tr:hover {
+      /* 한 줄 전체 호버링
+      .table-hover > tbody > td:hover {
+        background-color: yellow;
+      } */
+      .table-hover > tbody > tr > td:hover {
         background-color: yellow;
       }
 

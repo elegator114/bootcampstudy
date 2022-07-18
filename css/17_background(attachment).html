@@ -15,17 +15,21 @@
       /* background: color, image, repeat, position */
       body {
         /* background-image: url("./img/img_tree.png"); */
-        /* background-repeat: repeat-x; */
-        /* background-repeat: repeat-y; */
-        /* background-repeat: no-repeat; */
+        /* background-repeat: repeat-x;가로축으로만 반복 */
+        /* background-repeat: repeat-y;세로축으로만 반복 */
+
+        /* 아래는 no-repeat인 경우의 설정임  */
+        /* background-repeat: no-repeat;반복 없음 */
         /* background-position: center top; */
-        /* background-position: left center; */
+        /* background-position: left center; 왼쪽 가운데(위아래로)*/
         /* background-position: center center; */
-        /* background-position: right top; */
+        /* background-position: right top; 오른쪽 위(위아래로)*/
         /* background-position: right 20px top 50px; */
 
         /* background-attachment: scroll; */
+        /* background-attachment: fixed; 스크롤바로 움직여도 항상 그자리에..*/
 
+        /* 위 내용들을 한꺼번에 코딩하는 방법이 아래 나와 있다  */
         background: yellowgreen url("./img/img_tree.png") no-repeat right 20px
           top 50px;
 
