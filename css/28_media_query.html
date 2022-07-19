@@ -11,13 +11,14 @@
       }
 
       /* 미디어 쿼리 */
-      /* max-, min- 접두사를 사용할 수 있어요 */
+      /* max-, min- 접두사를 사용할 수 있어요. 이것은 조건식 */
+
       @media screen and (max-width: 1000px) {
         body {
           background-color: red;
         }
       }
-
+      /* 아래쪽 것이 우선순위가 높음.  */
       @media screen and (max-width: 600px) {
         body {
           background-color: blue;

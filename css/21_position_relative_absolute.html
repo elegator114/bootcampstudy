@@ -14,24 +14,27 @@
         border: 3px solid green;
       }
 
+      .general {
+        position: relative;
+
+        height: 50px;
+        width: 350px;
+        border: 3px solid blue;
+      }
+
       .absolute {
-        position: absolute;
-        top: 80px;
+        /* position: absolute; */
+        top: 0px;
         left: 40px;
         width: 240px;
         border: 3px solid red;
-      }
-
-      .general {
-        width: 350px;
-        border: 3px solid blue;
       }
     </style>
   </head>
   <body>
     <!-- position:absolute; -->
-    <!-- 현재(position:absolute; 가 적용된) html 요소의 부모 요소 중에서  -->
-    <!-- position:relative;가 설정된 가장 가까운 부모 요소에 대한 상대적인 위치 -->
+    <!-- position:absolute; 가 적용된 경우에  -->
+    <!-- position:relative;가 설정된 가장 가까운 부모 요소에 대한 상대적인 위치 설정 안된 부모는 넘어서 조상으로...position:relative를 찾아서 그에 상대적으로 자리를 잡는다-->
     <h2>position:absolute;</h2>
     <div class="relative">
       position:relative로 설정된 부모 요소
