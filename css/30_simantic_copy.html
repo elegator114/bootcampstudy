@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .header {
+        padding: 40px;
+        text-align: center;
+        background-color: #f9fc63;
+        color: black;
+      }
+
+      .navbar {
+        padding-left: 30px;
+        display: wrap;
+        flex-direction: row;
+        background-color: #333;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+      }
+
+      .navbar a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+        height: 50px;
+        font-size: 30px;
+      }
+
+      .navbar a:hover {
+        background-color: #f9fc63;
+        color: black;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .side {
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+        /* position: sticky;
+        top: 0; */
+      }
+
+      .fakeimg {
+        /* background-color: #aaa; */
+        width: 100%;
+        padding: 0px;
+      }
+
+      .main {
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+      }
+
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background-color: #ddd;
+      }
+
+      @media screen and (max-width: 768px) {
+        .row,
+        .navbar {
+          flex-direction: column;
+        }
+      }
+
+      .fixed {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: 3px solid black;
+        font-size: 25px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 레이아웃을 위한 시멘틱 태그 -->
+    <!-- header -->
+    <!-- nav -->
+    <!-- aside -->
+    <!-- main -->
+    <header class="header" id="header">
+      <h1>Who Am I</h1>
+    </header>
+
+    <nav class="navbar">
+      <a href="#project1">메뉴1</a>
+      <a href="#project2">메뉴2</a>
+      <a href="#project3">메뉴3</a>
+      <a href="#project4">메뉴4</a>
+      <a href="#project5">메뉴5</a>
+    </nav>
+
+    <div class="row">
+      <aside class="side">
+        <div class="about">
+          <h2>About</h2>
+          <!-- <div class="fakeimg" style="height: 200px"> -->
+          <img style="height: 150px" src="./img/kjg.png" alt="kjg" />
+          <!-- </div> -->
+          <p>저는 0년차 소프트웨어 개발자입니다.</p>
+          <h3>Skills</h3>
+          <p>JavaScript, Vue, React, Angular, Java, Database</p>
+          <br />
+
+          <img
+            src="https://miro.medium.com/max/1400/0*4aIfxfeoj7zBbulO.png"
+            style="height: 100px; width: 100%"
+            alt="javascript"
+          />
+
+          <br />
+
+          <img
+            src="https://segwitz.com/wp-content/uploads/2021/06/vuejs-development-malaysia.jpeg"
+            style="height: 100px; width: 100%"
+            alt="vue"
+          />
+
+          <br />
+
+          <img
+            src="https://www.datocms-assets.com/14946/1638186862-reactjs.png?auto=format&w=1000"
+            style="height: 100px; width: 100%"
+            alt="react"
+          />
+          \
+        </div>
+      </aside>
+
+      <main class="main">
+        <section>
+          <br id="project1" />
+          <br />
+          <br />
+          <h2>프로젝트 1</h2>
+          <h5>2020년 3월</h5>
+          <!-- <div class="fakeimg" style="height: 200px"> -->
+          <img
+            src="./img/fepay.png"
+            style="height: 400px; width: 100%"
+            alt="fepay"
+          />
+          <!-- </div> -->
+          <br />
+          <p>
+            홈페이지를 제작하는 프로젝트였습니다. 제 역할은 홈페이지를 전담하여
+            제작-관리하는 업무였습니다.
+            <br />
+            <br />
+            홈페이지: fepay.co.kr
+          </p>
+        </section>
+        <br />
+
+        <section>
+          <br id="project2" />
+          <br />
+          <br />
+          <h2>프로젝트 2</h2>
+          <h5>2020년 4월</h5>
+          <!-- <div class="fakeimg" style="height: 200px"> -->
+          <img
+            src="./img/dong.png"
+            style="height: 400px; width: 100%"
+            alt="dong"
+          />
+          <!-- </div> -->
+          <br />
+          <p>
+            홈페이지를 제작하는 프로젝트였습니다. 제 역할은 홈페이지를 전담하여
+            제작-관리하는 업무였습니다.
+            <br />
+            <br />
+            홈페이지: https://sites.google.com/site/denrhair/
+          </p>
+        </section>
+
+        <section>
+          <br id="project3" />
+          <br />
+          <br />
+          <h2>프로젝트 3</h2>
+          <h5>2020년 5월</h5>
+          <!-- <div class="fakeimg" style="height: 200px"> -->
+          <img
+            src="https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/gray-background-7131-98db5e6ffc4972baa4087760291cbc3e@2x.jpg"
+            style="height: 400px; width: 100%"
+            alt="fepay"
+          />
+          <!-- </div> -->
+          <br />
+          <p>
+            홈페이지를 제작하는 프로젝트였습니다. 제 역할은 홈페이지를 전담하여
+            제작-관리하는 업무였습니다.
+          </p>
+        </section>
+
+        <section>
+          <br id="project4" />
+          <br />
+          <br />
+          <h2>프로젝트 4</h2>
+          <h5>2020년 6월</h5>
+          <!-- <div class="fakeimg" style="height: 200px"> -->
+          <img
+            src="https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/gray-background-7131-98db5e6ffc4972baa4087760291cbc3e@2x.jpg"
+            style="height: 400px; width: 100%"
+            alt="fepay"
+          />
+          <!-- </div> -->
+          <br />
+          <p>
+            홈페이지를 제작하는 프로젝트였습니다. 제 역할은 홈페이지를 전담하여
+            제작-관리하는 업무였습니다.
+          </p>
+        </section>
+
+        <section>
+          <br id="project5" />
+          <br />
+          <br />
+          <h2>프로젝트 5</h2>
+          <h5>2020년 3월</h5>
+          <!-- <div class="fakeimg" style="height: 200px"> -->
+          <img
+            src="https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/gray-background-7131-98db5e6ffc4972baa4087760291cbc3e@2x.jpg"
+            style="height: 400px; width: 100%"
+            alt="fepay"
+          />
+          <!-- </div> -->
+          <br />
+          <p>
+            홈페이지를 제작하는 프로젝트였습니다. 제 역할은 홈페이지를 전담하여
+            제작-관리하는 업무였습니다.
+            <br />
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <div class="footer">
+      <h2>Copyright KJG 2022</h2>
+    </div>
+
+    <button class="fixed" type="button" onclick="location.href='#header';">
+      &uarr;
+    </button>
+
+    <script></script>
+  </body>
+</html>
