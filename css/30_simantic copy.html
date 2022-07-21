@@ -19,14 +19,15 @@
       }
 
       .header {
-        padding: 60px;
+        padding: 40px;
         text-align: center;
         background-color: #f9fc63;
         color: black;
       }
 
       .navbar {
-        display: flex;
+        padding-left: 30px;
+        display: wrap;
         flex-direction: row;
         background-color: #333;
         justify-content: center;
@@ -39,6 +40,8 @@
         padding: 14px 20px;
         text-decoration: none;
         text-align: center;
+        height: 50px;
+        font-size: 30px;
       }
 
       .navbar a:hover {
@@ -56,8 +59,8 @@
         flex: 30%;
         background-color: #f1f1f1;
         padding: 20px;
-        position: sticky;
-        top: 0;
+        /* position: sticky;
+        top: 0; */
       }
 
       .fakeimg {
@@ -84,6 +87,18 @@
           flex-direction: column;
         }
       }
+
+      .fixed {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: 3px solid black;
+        font-size: 25px;
+        color: black;
+      }
     </style>
   </head>
   <body>
@@ -92,9 +107,10 @@
     <!-- nav -->
     <!-- aside -->
     <!-- main -->
-    <header class="header">
+    <header class="header" id="header">
       <h1>Who Am I</h1>
     </header>
+
     <nav class="navbar">
       <a href="#">메뉴1</a>
       <a href="#">메뉴2</a>
@@ -102,6 +118,7 @@
       <a href="#">메뉴4</a>
       <a href="#project5">메뉴5</a>
     </nav>
+
     <div class="row">
       <aside class="side">
         <div class="about">
@@ -120,6 +137,7 @@
           <div class="fakeimg" style="height: 60px">Image</div>
         </div>
       </aside>
+
       <main class="main">
         <section>
           <h2>프로젝트 1</h2>
@@ -168,9 +186,15 @@
         </section>
       </main>
     </div>
+
     <div class="footer">
       <h2>Copyright 개발자의품격 2022</h2>
     </div>
+
+    <button class="fixed" type="button" onclick="location.href='#header';">
+      &uarr;
+    </button>
+
     <script></script>
   </body>
 </html>
