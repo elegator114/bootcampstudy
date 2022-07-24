@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!-- script는 head 안에도 사용할 수 있고 body 안에도 사용할 수 있고 body 밖에도 쓸 수 있다. -->
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -10,6 +12,7 @@
       document.write("Hello World!<br/>");
     </script>
     <script src="./js/01_js_location.js"></script> -->
+
     <!-- defer 속성은 자바스크립트 파일을 head 태그에 삽입해도 실제 실행은 body 제일 아래서 -->
     <!-- <script src="./js/01_js_location.js" defer></script> -->
   </head>
@@ -26,7 +29,10 @@
     <script src="./js/01_js_location.js"></script> -->
     <!--  -->
 
+    <!-- 외부 javascript를 가져와서 사용하는 방법  -->
     <script src="./js/01_js_location.js"></script>
+
+    <!-- script의 가장 적절한 위치는 아래 위치 html코드를 일단 화면에 뿌려주는게 더 속도가 좋음 -->
     <script></script>
   </body>
 </html>
