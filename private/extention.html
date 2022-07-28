@@ -7,6 +7,20 @@
     <title>Document</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      let universityNo = "21";
+      // 21을 네자리 0021로 만드는 방법
+      // while (universityNo.length < 4) {
+      //   universityNo = "0" + universityNo;
+      // }
+
+      // console.log(universityNo);
+      console.log(universityNo.padStart(4, "0"));
+
+      month = 11;
+      console.log(month.toString().padStart(4, "0"));
+
+      console.log("A".padEnd(6, "0"));
+    </script>
   </body>
 </html>
