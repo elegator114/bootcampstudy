@@ -28,19 +28,29 @@
     <!-- _parent, _top -->
 
     <!-- novalidate - form 태그 안의 input 요소의 정합성을 체크하는 않는다. -->
+    form action="전송할 주소(서버주소)" method="get" target="_self" novalidate
+    <br>
+    -input type="text" name="name" id="name" autocomplete="on",
+    <br>
+    -input type="tel" name="tel" id="tel" ,
+    <br>
+    -input type="email" name="email" id="email"
+    <br>
     <form action="전송할 주소(서버주소)" method="get" target="_self" novalidate>
       <div>
         <label for="name">이름</label>
         <input type="text" name="name" id="name" autocomplete="on" />
       </div>
+
       <div>
         <label for="tel">연락처</label>
         <input type="tel" name="tel" id="tel" />
       </div>
-      <div>
+      
         <label for="email">이메일</label>
         <input type="email" name="email" id="email" />
       </div>
+
       <button type="submit">저장</button>
       <!-- <button type="submit" formnovalidate="formnovalidate">저장</button> -->
     </form>

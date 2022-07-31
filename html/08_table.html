@@ -7,6 +7,7 @@
     <title>Document</title>
     <style>
       table,
+      tr,
       th,
       td {
         border: 1px solid black;
@@ -32,7 +33,10 @@
     <!-- 셀: td(데이터), th(열제목) -->
     <!-- thead - 제목이 들아가는 모든 tr태그들 -->
     <!-- tbody - 데이터가 들어가는 모든 tr태그들 -->
+
+    <!-- 첫번째 table  -->
     <table>
+      <!-- head row  -->
       <thead>
         <tr>
           <th>이름</th>
@@ -40,17 +44,21 @@
           <th>이메일</th>
         </tr>
       </thead>
+
       <tbody>
+        <!-- 1 row  -->
         <tr>
           <td>유재석</td>
           <td>010-0000-0000</td>
           <td>ryu@gmail.com</td>
         </tr>
+        <!-- 2 row  -->
         <tr>
           <td>김종국</td>
           <td>010-0000-0001</td>
           <td>kim@gmail.com</td>
         </tr>
+        <!-- 3 row  -->
         <tr>
           <td>송지효</td>
           <td>010-0000-0002</td>
@@ -59,6 +67,8 @@
       </tbody>
     </table>
     <br />
+
+    <!-- 두번째 table  -->
     <table>
       <thead>
         <tr>
@@ -74,12 +84,10 @@
           <td>18명</td>
         </tr>
         <tr>
-          <!-- <td>1학년</td> -->
           <td>2반</td>
           <td>19명</td>
         </tr>
         <tr>
-          <!-- <td>1학년</td> -->
           <td>3반</td>
           <td>18명</td>
         </tr>
@@ -87,7 +95,7 @@
       <tfoot>
         <tr>
           <td colspan="2">합계</td>
-          <!-- <td></td> -->
+
           <td>55명</td>
         </tr>
       </tfoot>
