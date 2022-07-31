@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+
+  어레이에서는 각각의 개체들을, 스트링에서는 각각의 char을 뽑아낸다.
   <body>
     <script>
       let brands = ["애플", "구글", "아마존", "마이크로소프트", "메타"];
+
       for (const brand of brands) {
         console.log(brand);
       }
@@ -20,6 +23,7 @@
 
       let num = 9012341623547; // Number Object
       let numString = num.toString(); // 숫자형을 문자형으로 타입을 변경해줌. -> String Object
+      console.log(numString);
       for (const n of numString) {
         console.log(n);
       }

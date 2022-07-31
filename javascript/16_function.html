@@ -68,8 +68,11 @@
       // 자바스크립트 내장 함수인 Function
       // 문자열로 파라미터, 코드블록 순서대로 넣어서 만들어요
       // 마지막 파라미터가 코드 블록, 그 앞에는 파라미터는 함수에 전달되는 파라미터.
+
       const add = new Function("num1", "num2", "return num1 + num2");
       console.log(add(21, 27));
+
+      console.log(calculator(5, 5, "*"));
 
       function calculator(num1, num2, operator) {
         if (operator === "+") {
@@ -82,12 +85,16 @@
           return num1 / num2;
         }
       }
-      const operator = "+";
-      const cal = new Function(
+
+      // new 형태의 function 정의는 function을 만든 이후에만 쓸 수 있다.
+
+      const oper = "+";
+      const calcu = new Function(
         "num1",
         "num2",
-        "return num1 " + operator + " num2"
+        "return num1 " + oper + " num2"
       );
+      console.log(calcu(1, 9));
 
       // 화살표 함수
     </script>
